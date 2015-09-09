@@ -1,0 +1,58 @@
+#btn_div {
+	text-align: center;
+	margin-top: 80px;
+}
+
+#seat-row {
+	margin-top: 30px;
+	
+}
+.button-row{
+	margin-top: 400px;
+	text-align: center;
+}
+.table-row{
+	margin-top: 40px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+#seat-list {
+	list-style: none outside none;
+	position: absolute;
+	float: left;
+}
+
+#seat-list li {
+	text-align: center;
+	margin-bottom: 100px;
+	position: absolute;
+	border: 2px solid #dbd6d6;
+	border-radius:2px;
+	
+}
+
+#seat-list li:HOVER{
+	cursor: pointer;
+}
+
+#seat-list li a {
+	text-decoration: none;
+	color:black;
+	
+}
+
+#seat-list .seat {
+	background: #e2dede;
+	height: 35px;
+	width: 35px;
+	display: block;
+}
+
+#seat-list .selectedSeat {
+	background: #f35143;
+}
+
+#seat-list .selectingSeat {
+	background: #62f556;
+}

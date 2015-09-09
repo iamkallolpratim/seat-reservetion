@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>seat reservation system</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">Movie Seat Reservation</h1>
+			</div>
+		</div>
+
+		<hr>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<form id="booking-form">
+						<div class="col-md-8">
+							<label>Name</label> <input type="text" class="form-control"
+								id="name" name="name">
+						</div>
+						<div class="col-md-4">
+							<label>No. Of Seats</label> <input type="number"
+								class="form-control" id="no_of_seats">
+						</div>
+					</form>
+					<div id="btn_div">
+						<h2>
+							<span class="label label-primary ">Select Seats</span>
+						</h2>
+					</div>
+				</div>
+				<div class="row" id="seat-row">
+					<div class="col-md-12" id="holder">
+						<ul id="seat-list">
+
+
+						</ul>
+
+					</div>
+				</div>
+				<div class="row button-row">
+					<div class="col-md-12">
+						<button type="button" onclick="saveDetails();"
+							class="btn btn-success btn-lg">Confirm Selection</button>
+					</div>
+				</div>
+				<div class="row table-row">
+					<div class="col-md-9">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>No Of Seats</th>
+									<th>Seats</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John Doe</td>
+									<td>5</td>
+									<td>5, 10, 25, 35, 65</td>
+								</tr>
+							</tbody>
+							<tbody id="seat_table"></tbody>
+						</table>
+					</div>
+					<div class="col-md-3">
+
+						<h4>
+							<span class="label label-default">Empty Seat</span>
+						</h4>
+						<h4>
+							<span class="label label-success">Selected Seat</span>
+						</h4>
+						<h4>
+							<span class="label label-danger">Reserved seat</span>
+						</h4>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
